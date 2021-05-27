@@ -49,7 +49,7 @@ let key = '71ddd05001a07aa8698d41234c63f10d';
  //Add Event listener to save change button
  saveChange.addEventListener('click', function(){
      let newCity = document.querySelector('.myCity').value;
-     let API = `http://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${key}`;
+     let API = `https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${key}`;
      //Check the city same or not
      if(newCity){
         fetch(API)
